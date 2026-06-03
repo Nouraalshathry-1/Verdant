@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "region": "SA",
+    "scientificName": "Prosopis juliflora",
+    "threatLabel": "Critical",
+    "threatScore": 95,
+    "spreadRate": "2.3 ft/day",
+    "origin": "Tropical America (Mexico, Colombia, Venezuela)",
+    "appearance": "A thorny tree or shrub reaching 12 meters tall. It has feathery, bright green leaves, small pale yellow flower spikes, and long straight seed pods that turn yellow when ripe.",
+    "impactSummary": "Drains groundwater, kills native Acacia trees",
+    "bio": "The most destructive invader in Saudi Arabia. Its roots reach 30 meters deep, draining groundwater reserves and outcompeting native trees that local wildlife depend on.",
+    "removalSteps": [
+      "Cut stem at ground level using a chainsaw or handsaw",
+      "Apply undiluted triclopyr herbicide to the stump within 60 seconds of cutting",
+      "Remove all root fragments within 1 meter of the stump",
+      "Monitor the site every 2 weeks for one full growing season"
+    ],
+    "photoName": "prosopis_juliflora"
+  },
+  {
+    "id": 2,
+    "region": "SA",
+    "scientificName": "Nicotiana glauca",
+    "threatLabel": "High",
+    "threatScore": 78,
+    "spreadRate": "1.1 ft/day",
+    "origin": "South America (Bolivia and Argentina)",
+    "appearance": "A soft-wooded shrub or small tree growing up to 6 meters. It has large, oval, blue-grey leaves with a waxy coating and produces clusters of narrow, tubular yellow flowers year-round.",
+    "impactSummary": "Toxic to all livestock, rapidly colonises wadis and mountain regions",
+    "bio": "A fast-growing toxic shrub that colonises mountain valleys and roadsides across the Kingdom. Every part of the plant is poisonous and it is deadly to all grazing animals.",
+    "removalSteps": [
+      "Wear nitrile gloves at all times — all parts are toxic to humans",
+      "Cut plants before flowering to prevent seed dispersal",
+      "Seal all cuttings in heavy-duty bags before disposal",
+      "Do not compost any part of this plant under any circumstances"
+    ],
+    "photoName": "nicotiana_glauca"
+  },
+  {
+    "id": 3,
+    "region": "SA",
+    "scientificName": "Opuntia ficus-indica",
+    "threatLabel": "High",
+    "threatScore": 71,
+    "spreadRate": "0.9 ft/day",
+    "origin": "Mexico and Central America",
+    "appearance": "A large succulent cactus with flat, oval, blue-green pads covered in clusters of fine hair-like spines. It produces bright yellow or orange flowers and red or purple edible fruit.",
+    "impactSummary": "Dense thorny thickets block wildlife movement in southwestern mountains",
+    "bio": "Spreads rapidly across the southwestern mountain regions of Saudi Arabia, forming impenetrable thorny thickets that block the movement of native wildlife and crowd out local plant species.",
+    "removalSteps": [
+      "Always use thick leather gloves and metal tongs — spines penetrate standard gloves",
+      "Dig out the entire root pad using a mattock or spade",
+      "Lay detached pads on dry rock in full sun for at least 2 weeks before disposal",
+      "Never mulch or bury pads — they re-root extremely easily"
+    ],
+    "photoName": "opuntia_ficus_indica"
+  },
+  {
+    "id": 4,
+    "region": "SA",
+    "scientificName": "Argemone ochroleuca",
+    "threatLabel": "Moderate",
+    "threatScore": 58,
+    "spreadRate": "0.5 ft/day",
+    "origin": "Mexico and the Caribbean",
+    "appearance": "A prickly annual herb growing up to 1 meter tall with deeply lobed, spiny blue-green leaves marked with white veins. It produces delicate pale yellow to cream-white flowers with a papery texture.",
+    "impactSummary": "Displaces native wildflowers on abandoned and disturbed farmland",
+    "bio": "A tough spiny herb that rapidly colonises abandoned farms and disturbed habitats across the Kingdom, outcompeting native wildflowers and producing toxic seeds that contaminate grain crops.",
+    "removalSteps": [
+      "Hand-pull plants before they set seed in spring",
+      "Wear thick gloves — leaf spines are sharp",
+      "Place all material in sealed bags and dispose of as general waste",
+      "Immediately reseed cleared ground with native plants to prevent return"
+    ],
+    "photoName": "argemone_ochroleuca"
+  },
+  {
+    "id": 5,
+    "region": "SA",
+    "scientificName": "Calotropis procera",
+    "threatLabel": "High",
+    "threatScore": 62,
+    "spreadRate": "0.7 ft/day",
+    "origin": "Sub-Saharan Africa and the Indian subcontinent",
+    "appearance": "A large soft-wooded shrub reaching 4 meters with thick, oval, pale grey-green leaves. It produces distinctive clusters of waxy, star-shaped purple and white flowers and large, smooth, inflated seed pods.",
+    "impactSummary": "Rapidly dominates overgrazed and degraded desert landscapes",
+    "bio": "Thrives on disturbed and heavily grazed soils, forming dense stands that exclude all native vegetation. Its milky white sap is highly toxic to animals and causes severe skin irritation on contact.",
+    "removalSteps": [
+      "Always wear waterproof gloves — sap causes serious burns and eye damage",
+      "Cut the main stem at the base and immediately paint the stump with glyphosate",
+      "Bag and remove all plant material from the site",
+      "Return every 3 months and retreat any regrowth for at least 2 full years"
+    ],
+    "photoName": "calotropis_procera"
+  },
+  {
+    "id": 6,
+    "region": "CA",
+    "scientificName": "Centaurea solstitialis",
+    "threatLabel": "Critical",
+    "threatScore": 92,
+    "spreadRate": "2.1 ft/day",
+    "origin": "Mediterranean Europe (Turkey, Greece, and the Balkans)",
+    "appearance": "An upright annual herb growing 30 to 90 cm tall with stiff, branching stems covered in dense grey-green woolly hair. It produces small, bright yellow flower heads surrounded by long, straw-coloured spines up to 2.5 cm long.",
+    "impactSummary": "Has permanently displaced native grasslands across millions of California acres",
+    "bio": "Known as the plant that ate California. Its sharp spines create impenetrable barriers for wildlife and it has colonised over 15 million acres of native grassland since its arrival in the 1800s.",
+    "removalSteps": [
+      "Mow or cut plants before flower heads open, typically in late May",
+      "For large areas, introduce permitted goat grazing in early spring",
+      "Apply clopyralid herbicide to stubborn or returning patches",
+      "Immediately overseed all cleared areas with native bunchgrasses"
+    ],
+    "photoName": "centaurea_solstitialis"
+  },
+  {
+    "id": 7,
+    "region": "CA",
+    "scientificName": "Cortaderia selloana",
+    "threatLabel": "High",
+    "threatScore": 80,
+    "spreadRate": "1.4 ft/day",
+    "origin": "South America (Argentina, Brazil, and Chile)",
+    "appearance": "A massive tussock grass forming dense clumps up to 3 meters wide with long, arching, sharp-edged leaves. It produces tall, feathery, silvery-white plumes on stalks reaching up to 4 meters in late summer.",
+    "impactSummary": "Produces millions of airborne seeds and creates extreme fire hazards on coastal hills",
+    "bio": "Each mature plant releases up to 100,000 airborne seeds per year. Its dense, dry leaf litter creates catastrophic fire fuel loads and it has rapidly colonised California's coastal hillsides and canyons.",
+    "removalSteps": [
+      "Cut all seed plumes to the ground before they open, typically in August",
+      "Apply glyphosate herbicide directly to the cut crown of the plant",
+      "Bag all material tightly — do not burn on site or transport unsealed",
+      "Revisit monthly and treat any regrowth immediately"
+    ],
+    "photoName": "cortaderia_selloana"
+  },
+  {
+    "id": 8,
+    "region": "CA",
+    "scientificName": "Eichhornia crassipes",
+    "threatLabel": "Critical",
+    "threatScore": 88,
+    "spreadRate": "3.0 ft/day",
+    "origin": "Amazon Basin, Brazil",
+    "appearance": "A floating aquatic plant with glossy, rounded, dark green leaves on inflated, spongy stalks that keep it buoyant. It produces striking spikes of lavender-blue flowers with a single yellow-spotted petal.",
+    "impactSummary": "Forms impenetrable floating mats that suffocate entire waterways and kill aquatic life",
+    "bio": "The fastest spreading aquatic plant in the world. It doubles in size every two weeks, completely smothering the Sacramento Delta and blocking sunlight from reaching underwater ecosystems.",
+    "removalSteps": [
+      "Contact your local water authority first — removal requires a permit in California",
+      "Use mechanical harvesting boats for any infestation larger than 10 square meters",
+      "Introduce state-approved weevil biocontrols for long-term population management",
+      "Never compost harvested material — any fragment can re-root and restart the infestation"
+    ],
+    "photoName": "eichhornia_crassipes"
+  },
+  {
+    "id": 9,
+    "region": "CA",
+    "scientificName": "Hedera helix",
+    "threatLabel": "High",
+    "threatScore": 75,
+    "spreadRate": "1.0 ft/day",
+    "origin": "Europe, Western Asia, and North Africa",
+    "appearance": "A woody evergreen vine with dark, waxy, lobed leaves that climbs using small adhesive rootlets. Mature plants produce small, dull yellow-green flower clusters and round black berries in winter.",
+    "impactSummary": "Strangles and topples ancient redwoods and oaks across California forests",
+    "bio": "A relentless climbing vine that smothers the forest floor and scales native trees, adding enough weight to topple centuries-old redwoods and oaks during winter storms.",
+    "removalSteps": [
+      "Cut the ivy stem completely around the tree trunk at chest height",
+      "Remove a 30 cm ring of stem and bark just below the cut to prevent regrowth",
+      "Leave the dead canopy vines in place for 4 to 6 weeks before pulling them down",
+      "Pull all ground-level ivy outward from the tree base working in a 3 meter radius"
+    ],
+    "photoName": "hedera_helix"
+  },
+  {
+    "id": 10,
+    "region": "CA",
+    "scientificName": "Carpobrotus edulis",
+    "threatLabel": "Moderate",
+    "threatScore": 65,
+    "spreadRate": "0.8 ft/day",
+    "origin": "South Africa (Western Cape Province)",
+    "appearance": "A thick, mat-forming succulent with long, fleshy, triangular stems that spread along the ground. It produces large, showy flowers in bright magenta, pink, or yellow, followed by fig-like edible fruit.",
+    "impactSummary": "Smothers native coastal dune plants and permanently alters soil chemistry",
+    "bio": "Originally planted by Caltrans for highway erosion control, it escaped and now dominates coastal dunes from San Diego to Oregon. It changes soil salinity so completely that native dune species can never return.",
+    "removalSteps": [
+      "Hand-pull all plants before the fruiting season in late summer",
+      "Remove the entire root mat — even small fragments left in soil will regrow",
+      "Immediately transplant native coastal dune species into cleared areas",
+      "Use biodegradable erosion control fabric to stabilise bare sand temporarily"
+    ],
+    "photoName": "carpobrotus_edulis"
+  }
+]
