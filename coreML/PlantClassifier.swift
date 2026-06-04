@@ -5,7 +5,8 @@ import UIKit
 @MainActor
 final class PlantClassifier: @unchecked Sendable {
     static let shared = PlantClassifier()
-    private var request: VNCoreMLRequest?
+    private var vnModel: VNCoreMLModel?
+    private let classifyQueue = DispatchQueue(label: "plantClassifier", qos: .userInitiated)
 
     private init() {
         do {
@@ -15,9 +16,7 @@ final class PlantClassifier: @unchecked Sendable {
             }
             let config = MLModelConfiguration()
             let coreMLModel = try MLModel(contentsOf: modelURL, configuration: config)
-            let vnModel = try VNCoreMLModel(for: coreMLModel)
-            request = VNCoreMLRequest(model: vnModel)
-            request?.imageCropAndScaleOption = .centerCrop
+            vnModel = try VNCoreMLModel(for: coreMLModel)
             print("✅ Model loaded successfully")
         } catch {
             print("❌ Failed to load model: \(error)")
@@ -25,9 +24,16 @@ final class PlantClassifier: @unchecked Sendable {
     }
 
     func classify(pixelBuffer: CVPixelBuffer, completion: @escaping @Sendable (String, Double) -> Void) {
-        guard let request = request else { return }
-        let handler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, options: [:])
-        DispatchQueue.global(qos: .userInitiated).async {
+        guard let vnModel else { return }
+        // CVPixelBuffer is a C type with no Sendable conformance; wrapping it lets us
+        // cross the concurrency boundary safely — AVFoundation guarantees the buffer
+        // stays valid until the VNImageRequestHandler finishes.
+        struct SendableBuffer: @unchecked Sendable { let value: CVPixelBuffer }
+        let sendable = SendableBuffer(value: pixelBuffer)
+        classifyQueue.async {
+            let request = VNCoreMLRequest(model: vnModel)
+            request.imageCropAndScaleOption = .centerCrop
+            let handler = VNImageRequestHandler(cvPixelBuffer: sendable.value, options: [:])
             try? handler.perform([request])
             guard let top = (request.results as? [VNClassificationObservation])?.first else { return }
             DispatchQueue.main.async {

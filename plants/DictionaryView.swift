@@ -16,7 +16,7 @@ struct DictionaryView: View {
                             SectionHeader(title: "🇸🇦 Saudi Arabia", subtitle: "Invaders of the Arabian Peninsula")
 
                             ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: 14) {
+                                LazyHStack(spacing: 14) {
                                     ForEach(saudiPlants) { plant in
                                         NavigationLink(destination: PlantDetailView(plant: plant)) {
                                             PlantCardView(plant: plant)
@@ -32,7 +32,7 @@ struct DictionaryView: View {
                             SectionHeader(title: "🇺🇸 California", subtitle: "Invaders of the Golden State")
 
                             ScrollView(.horizontal, showsIndicators: false) {
-                                HStack(spacing: 14) {
+                                LazyHStack(spacing: 14) {
                                     ForEach(californiaPlants) { plant in
                                         NavigationLink(destination: PlantDetailView(plant: plant)) {
                                             PlantCardView(plant: plant)

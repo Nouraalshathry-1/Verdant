@@ -78,11 +78,11 @@ struct ScanEntryRow: View {
             }
         }
         .padding(12)
-        .background(Color("AccentColor").opacity(0.08))
+        .background(Color.white.opacity(0.22))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .overlay(
             RoundedRectangle(cornerRadius: 16)
-                .stroke(Color("AccentColor").opacity(0.15), lineWidth: 1.5)
+                .stroke(Color.white.opacity(0.35), lineWidth: 1.5)
         )
     }
 }

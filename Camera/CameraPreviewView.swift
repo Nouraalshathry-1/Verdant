@@ -1,4 +1,3 @@
-
 @preconcurrency import AVFoundation
 import SwiftUI
 
@@ -36,7 +35,7 @@ class PreviewUIView: UIView {
 
     private func setupCamera() {
         let session = AVCaptureSession()
-        session.sessionPreset = .high
+        session.sessionPreset = .medium
 
         guard
             let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),

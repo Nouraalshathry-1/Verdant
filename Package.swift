@@ -8,19 +8,19 @@ import PackageDescription
 import AppleProductTypes
 
 let package = Package(
-    name: "Verdant",
+    name: "Verdant - Invasive Plants",
     platforms: [
         .iOS("26.0")
     ],
     products: [
         .iOSApplication(
-            name: "Verdant",
+            name: "Verdant - Invasive Plants",
             targets: ["AppModule"],
             bundleIdentifier: "com.NouraAlshathry.Verdant",
             teamIdentifier: "F7RR3WPWYP",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .cloud),
+            appIcon: .asset("AppIcon"),
             accentColor: .asset("AccentColor"),
             supportedDeviceFamilies: [
                 .pad,

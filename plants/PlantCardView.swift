@@ -9,8 +9,7 @@ struct PlantCardView: View {
 
             // Photo
             ZStack(alignment: .topTrailing) {
-                Image(plant.photoName)
-                    .resizable()
+                DownsampledImage(name: plant.photoName, size: CGSize(width: 160, height: 200))
                     .scaledToFill()
                     .frame(width: 160, height: 200)
                     .clipped()
@@ -24,19 +23,19 @@ struct PlantCardView: View {
                 Text(plant.scientificName)
                     .font(.system(size: 12, weight: .semibold))
                     .italic()
-                    .foregroundColor(Color("AccentColor"))
+                    .foregroundColor(Color("PrimaryColor"))
                     .lineLimit(2)
                     .minimumScaleFactor(0.8)
 
                 Text(plant.spreadRate)
                     .font(.system(size: 10))
-                    .foregroundColor(Color("AccentColor").opacity(0.5))
+                    .foregroundColor(Color("PrimaryColor").opacity(0.7))
             }
             .padding(10)
             .frame(width: 160, alignment: .leading)
+            .background(Color("AccentColor"))
         }
         .frame(width: 160)
-        .background(Color("PrimaryColor"))
         .clipShape(RoundedRectangle(cornerRadius: 16))
         .overlay(
             RoundedRectangle(cornerRadius: 16)

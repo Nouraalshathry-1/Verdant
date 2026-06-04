@@ -27,25 +27,7 @@ struct MainTabView: View {
                 }
                 .tag(Tab.dictionary)
         }
-        .tint(Color("AccentColor"))
+        .tint(.white)
         .preferredColorScheme(.dark)
-        .onAppear {
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = UIColor(named: "PrimaryColor")
-
-            let unselected = UITabBarItemAppearance()
-            unselected.normal.iconColor = UIColor(named: "AccentColor")?.withAlphaComponent(0.4)
-            unselected.normal.titleTextAttributes = [
-                .foregroundColor: UIColor(named: "AccentColor")!.withAlphaComponent(0.4)
-            ]
-
-            appearance.stackedLayoutAppearance = unselected
-            appearance.inlineLayoutAppearance = unselected
-            appearance.compactInlineLayoutAppearance = unselected
-
-            UITabBar.appearance().standardAppearance = appearance
-            UITabBar.appearance().scrollEdgeAppearance = appearance
-        }
     }
 }
