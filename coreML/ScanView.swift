@@ -29,18 +29,20 @@ struct ScanView: View {
 
                 if showCard, let plant = detectedPlant {
                     DetectionCardView(plant: plant, confidence: confidence) {
-                        let entry = ScanEntry(
-                            plantID: plant.id,
-                            confidence: confidence,
-                            location: locationManager.locationString
-                        )
-                        store.add(entry)
                         showCard = false
                         detectedPlant = nil
                         confidence = 0.0
                         consecutiveCount = 0
                         lastIdentifier = ""
                         isScanning = true
+                    }
+                    .onAppear {
+                        let entry = ScanEntry(
+                            plantID: plant.id,
+                            confidence: confidence,
+                            location: locationManager.locationString
+                        )
+                        store.add(entry)
                     }
                     .onTapGesture { navigateToDetail = true }
                     .transition(.move(edge: .bottom).combined(with: .opacity))
